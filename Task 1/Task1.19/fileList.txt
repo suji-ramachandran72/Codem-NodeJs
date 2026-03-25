@@ -1,0 +1,7 @@
+bitmap.bmp
+data.json
+image.png
+index.html
+logo.svg
+script.js
+style.css

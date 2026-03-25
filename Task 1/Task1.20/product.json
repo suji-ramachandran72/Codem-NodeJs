@@ -1,0 +1,8 @@
+[{ "name": "Laptop", "price": 800 }, 
+{ "name": "Phone", "price": 500 },
+{"name": "HeadPhone", "price": 1400},
+{"name": "Charger", "price": 400},
+{"name": "table", "price": 600},
+{"name": "PowerSaver", "price": 1500}
+
+] 
