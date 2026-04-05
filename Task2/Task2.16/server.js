@@ -33,7 +33,7 @@ http.createServer(async(req,res)=>{
         const report=formatReport({
             sales,
             expenses,
-            profit,
+            profit, 
             tax
         });
         report.timeTaken="750ms";

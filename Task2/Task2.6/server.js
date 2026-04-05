@@ -11,7 +11,6 @@ emitter.on('dataReceived',async(data)=>{
 });
 emitter.on('dataValid',async(data)=>{
     console.log('DataValid->validation passed');
-        console.log('DataSaved-> written to result.txt');
     const processed={
         id:data.id,
         value:data.value*2
@@ -26,7 +25,7 @@ emitter.on('dataProcessed',async(data)=>{
     await fs.promises.writeFile('result.txt',JSON.stringify(data));
     emitter.emit('dataSaved');
 });
-emitter.on('datasaved',()=>{
+emitter.on('dataSaved',()=>{
     console.log('DataSaved-> written to result.txt');
 });
 emitter.emit('dataReceived',{id:1,value:42});

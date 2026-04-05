@@ -24,7 +24,6 @@ function validateUser(user) {
     });
 }
 
-// 🔹 3. Enrich User
 function enrichUser(user) {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -36,7 +35,7 @@ function enrichUser(user) {
     });
 }
 
-// 🔹 4. Save User (with retry)
+
 function saveUser(user, retry = true) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -58,7 +57,7 @@ function saveUser(user, retry = true) {
     });
 }
 
-// 🔹 Run Pipeline
+
 fetchUserData(5)
     .then(user => validateUser(user)
         .catch(() => {
